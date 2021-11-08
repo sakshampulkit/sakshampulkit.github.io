@@ -1,39 +1,62 @@
-<html>
-<head>
-	<title>Pokemon Chart</title>
-</head>
-<body>
-	<h1>First Gen Pokemon Chart</h1>
-	<table border='1'>
-		<thead>
-			<tr>
-				<th>Image</th>
-				<th>Name</th>
-				<th>Type</th>
-				<th>Evolves Into</th>
-			</tr>
-		</thead>
+# Program to peform basic arthematic operations
 
-		<tbody>
-			<tr>
-				<td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
-				<td>Bulbasur</td>
-				<td>Grass/Poison</td>
-				<td><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
-			</tr>
-			<tr>
-				<td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
-				<td>Charmender</td>
-				<td>Fire</td>
-				<td><a href="http://pokemon.wikia.com/wiki/Charmeleon">Charmeleon</a></td>
-			</tr>
-			<tr>
-				<td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
-				<td>Squirtle</td>
-				<td>Water</td>
-				<td><a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a></td>
-			</tr>
-		</tbody>
-	</table>
-</body>
-</html>
+print('This is a calculator program using python')
+print('The operations :')
+print('')
+print('1. Addition')
+print('2. Subtraction')
+print('3. Multiplication')
+print('4. Division')
+print('5. Greater than')
+print('6. Table of any number')
+print('')
+
+choice = int(input('Enter Your Choice : '))
+print('')
+
+if (choice == 1):
+    choice1 = int(input('Enter first number : '))
+    choice2 = int(input('Enter second number : '))
+    sum1 = choice1 + choice2
+    print('The sum is : ' , sum1)
+
+elif(choice == 2):
+    choice1 = int(input('Enter first number : '))
+    choice2 = int(input('Enter second number : '))
+    difference = choice1 - choice2
+    print('The difference is : ' , difference)
+
+elif(choice == 3):
+    choice1 = int(input('Enter first number : '))
+    choice2 = int(input('Enter second number : '))
+    product = choice1 * choice2
+    print('The product is : ' , product)
+
+elif(choice == 4):
+    choice1 = int(input('Enter first number : '))
+    choice2 = int(input('Enter second number : '))
+    quotient = choice1 / choice2
+    print('The quotient is : ' , quotient)
+
+elif(choice == 5):
+    choice1 = int(input('Enter first number : '))
+    choice2 = int(input('Enter second number : '))
+    if choice1 > choice2:
+        print(choice1,'is greater')
+    elif choice2 > choice1:
+        print(choice2 ,'is greater')
+    else:
+        print('Both are equal')
+
+elif(choice == 6):
+    numbers = int(input('Enter the number : '))
+
+    for val in range(1,11):
+        print(numbers , ' x ' , val , ' = ' , numbers*val)
+
+else:
+    print('Invalid choice')
+
+
+
+
